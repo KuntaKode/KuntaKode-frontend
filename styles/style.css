@@ -1,6 +1,7 @@
 /* mobile first approach */
 :root{
     --section-title-color: rgb(170, 169, 169);
+    --icons-color: #684DF4;
 }
 html{
     font-size: 10px;
@@ -19,6 +20,11 @@ body{
     text-align: center;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+.title-icon{
+    height: 3rem;
+    margin: 0;
 }
 
 .row-flex{
@@ -117,4 +123,14 @@ body{
     color: rgb(165, 0, 0);
     font-weight: 700;
     font-size: 2rem;
+}
+
+.socialmedia{
+    text-decoration: none;
+}
+
+.socialmedia-handles{
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
 }
