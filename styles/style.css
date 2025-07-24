@@ -14,7 +14,7 @@ body{
 
 /*style for projects and team begins here*/
 .section-title{
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 1000;
     color: rgb(170, 169, 169);
     font-style: italic;
@@ -24,7 +24,7 @@ body{
 }
 
 .title-icon{
-    height: 3rem;
+    height: 2rem;
     margin: 0;
 }
 
@@ -41,7 +41,7 @@ body{
 }
 .section-sub-title-container{
     justify-content: center;
-    font-size: 3rem;
+    font-size: 1.7rem;
     gap: 1rem;
     margin-bottom: 3rem;
     font-weight: bold;
@@ -74,35 +74,30 @@ body{
     overflow-x: scroll; /* Change to 'scroll' to enable native snapping */
     width: 95%;
     -webkit-overflow-scrolling: touch;
-    margin: 0 4rem;
+    margin: 0 auto;
     scroll-snap-type: x mandatory; /* Snap horizontally, must snap to a point */
 }
 
 .member-card, .project-card {
     flex-shrink: 0;
     text-align: center;
-    width: 30rem; /* Fixed width, good */
     background-color: white;
     scroll-snap-align: start;
-}
-
-@media (max-width: 41.2rem) {
-  .member-card, .project-card{
-    max-width: 25rem;
-  }
 }
 
 .project-card{
   padding: 0;
   justify-content: center;
   padding-bottom: 2rem;
+  max-width: 23rem;
 }
 
 .member-card{
   justify-content: space-evenly;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 2rem;
-  height: 50rem;
+  height: max(35rem, 60vh);
+  max-width: 60vw;
 }
 
 /*Hide scrollbar visually while retaining functionality */
@@ -127,17 +122,17 @@ body{
 }
 
 .project-title{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .project-description{
     margin: 0 auto;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 80%;
 }
 
-.member-name{
-    font-size: 2.5rem;
+.member-name, .member-role{
+    font-size: 1.5rem;
 }
 
 .member-img{
@@ -148,7 +143,6 @@ body{
 .member-role{
     color: rgb(165, 0, 0);
     font-weight: 700;
-    font-size: 2rem;
 }
 
 .socialmedia{
@@ -163,7 +157,7 @@ body{
 
 .previous, .previous-project, .next, .next-project{
   position: absolute;
-  width: 8rem;
+  width: 4.8rem;
   cursor: pointer;
   top: 50%;
   z-index: 1;
@@ -203,3 +197,38 @@ body{
     cursor: not-allowed;
 }
 /*style for projects and team ends here*/
+
+@media (min-width: 41.2rem) {
+  .member-card, .project-card{
+    max-width: 30rem; /* Fixed width, good */
+  }
+  .member-card{
+  padding: 2rem;
+  height: 50rem;
+  }
+  
+  .section-title{
+    font-size: 6rem;
+  }
+  .sub-title{
+    font-size: 3rem;
+  }
+  .title-icon{
+    height: 3rem;
+}
+.previous, .previous-project, .next, .next-project{
+    width: 7.5rem;
+}
+.members-container, .project-container{
+    margin: 0 4rem;
+}
+.member-name{
+    font-size: 2.5rem;
+}
+.project-title{
+    font-size: 2rem;
+}
+.project-description{
+    font-size: 1.3rem;
+}
+}
