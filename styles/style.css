@@ -198,6 +198,81 @@ body{
 }
 /*style for projects and team ends here*/
 
+/* style for footer */
+.footer{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 3rem 1rem;
+    padding-left: 5rem;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    gap: 5rem;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.first-container{
+    justify-content: space-around;
+}
+.footer-kunta-logo{
+    width: 12rem;
+}
+
+.subcription-title{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.subscription-comment{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.footer-email{
+    height: 4rem;
+    width: 30rem;
+    font-size: 2.5rem;
+    padding: 0.5rem;
+    color: white;
+    background-color: #000;
+    border: solid 1px white;
+}
+
+.footer-send{
+    height: 5rem;
+    width: 10rem;
+    font-size: 2.7rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.footer-about-kuntakode{
+    width: 30rem;
+    text-align: left;
+}
+
+.footer-about-title, .footer-social-title, .copyright-text, .powered-by{
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.footer-about-comment{
+    font-size: 1.3rem;
+}
+
+.footer-social-icon{
+    width: 5rem;
+}
+
+.footer-social-icons{
+    column-gap: 3rem;
+}
+/* end of style for footer */
+
+/* style for larger viewport */
 @media (min-width: 41.2rem) {
   .member-card, .project-card{
     max-width: 30rem; /* Fixed width, good */
