@@ -12,47 +12,13 @@
 </head>
 
 <body>
-    <!-- Top Contact Bar -->
-  <div class="top-bar">
-    <p><img src="./assets/location.svg" alt=""> Banjul, The Gambia</p>
-    <p><img src="./assets/phone.svg" alt=""> +220 1234567</p>
-    <p><img src="./assets/email.svg" alt=""> kuntakode@gmail.com</p>
-    <div class="social-icons">
-      <span>Follow us on:</span>
-      <a href="#"><img src="/assets/instagram.svg" alt="Instagram"></a>
-      <a href="#"><img src="/assets/linkedin.svg" alt="LinkedIn"></a>
-    </div>
-  </div>
-  <!-- Navigation -->
-  <header>
-    <div class="logo">
-      <img src="/assets/KuntaKode Logo.png" alt="KuntaKode Logo">
-    </div>
-    <nav id="nav-links">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li class="dropdown">
-          <a href="#">Services</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Mobile Apps</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Blogs</a></li>
-        <li><a href="#">Contact Us</a></li>
-        <li><a class="appointment" href="#">Make Appointment</a></li>
-      </ul>
-    </nav>
-    <button id="hamburger"><img src="/assets/icon-hamburger.svg" alt="Menu"></button>
-  </header>
     <section class="projects" id="projects">
         <h2 class="section-title">PROJECTS</h2>
         <div class="section-sub-title-container row-flex">
             <img src="../assets/title_shape_2.svg" alt="title-icon" class="title-icon">
             <p class="sub-title">Our Recent <span class="red">Projects</span></p>
         </div>
-        <div class="project-container row-flex">
+        <div class="project-container row-flex" id="projects-container">
             <div class="project-card column-flex">
                 <img src="../assets/project_2_3.webp" alt="Web App" class="project-img">
                 <div class="project-text">
@@ -90,6 +56,8 @@
                 </div>
             </div>
         </div>
+        <img src="../assets/arrow left.svg" alt="previous" id="previous-project" class="previous">
+        <img src="../assets/arrow-right.svg" alt="next" id="next-project" class="next">
     </section>
     <section class="team" id="team">
         <h2 class="section-title">TEAM</h2>
@@ -97,9 +65,9 @@
             <img src="../assets/title_shape_2.svg" alt="title-icon" class="title-icon">
             <p class="sub-title">Meet The <span class="red">Team</span> Behind KuntaKode</p>
         </div>
-        <div class="members-container row-flex">
-            <div class="member-card column-flex">
-                <img src="../assets/Mamadou.jpg" alt="Mamadou Bah" class="member-img">
+        <div class="members-container row-flex" id="members-container">
+            <div class="member-card column-flex fist">
+                <img src="../assets/Mamadou.jpg" alt="Mamadou Bah" class="member-img first">
                 <p class="member-name">Mamadou Bah</p>
                 <p class="member-role">Backend Developer, Project Manager, UI/UX Designer</p>
                 <div class="socialmedia-handles row-flex">
@@ -135,14 +103,11 @@
                 <p class="member-name">Mustapha Darboe</p>
                 <p class="member-role">Fullstack Developer</p>
                 <div class="socialmedia-handles row-flex">
-                    <a href="" class="socialmedia github">
+                    <a href="https://github.com/mustaphaDarbo" class="socialmedia github" target="_blank">
                         <img src="../assets/github.svg" alt="github" class="socialmedia-icon">
                     </a>
-                    <a href="" class="socialmedia twitter">
-                        <img src="../assets/x.svg" alt="twitter" class="socialmedia-icon">
-                    </a>
-                    <a href="" class="socialmedia linked-in">
-                        <img src="../assets/linkedin.svg" alt="linked-in" class="socialmedia-icon">
+                    <a href="https://www.instagram.com/mustapha.darbo?igsh=MWRyMzJ0ZTBqZGRnMg==" class="socialmedia instagram" target="_blank">
+                        <img src="../assets/instagram.svg" alt="instagram" class="socialmedia-icon">
                     </a>
                 </div>
             </div>
@@ -163,17 +128,14 @@
                 </div>
             </div>
             <div class="member-card column-flex">
-                <img src="../assets/Algasim.jpg" alt="Amie Sohna" class="member-img">
+                <img src="../assets/Amie.jpg" alt="Amie Sohna" class="member-img">
                 <p class="member-name">Amie Sohna</p>
                 <p class="member-role">Frontend Developer</p>
                 <div class="socialmedia-handles row-flex">
-                    <a href="" class="socialmedia github">
+                    <a href="https://github.com/sohnaamie" class="socialmedia github" target="_blank">
                         <img src="../assets/github.svg" alt="github" class="socialmedia-icon">
                     </a>
-                    <a href="" class="socialmedia twitter">
-                        <img src="../assets/x.svg" alt="twitter" class="socialmedia-icon">
-                    </a>
-                    <a href="" class="socialmedia linked-in">
+                    <a href="http://www.linkedin.com/in/amie-sohna-834982335" class="socialmedia linked-in" target="_blank">
                         <img src="../assets/linkedin.svg" alt="linked-in" class="socialmedia-icon">
                     </a>
                 </div>
@@ -192,56 +154,42 @@
                 </div>
             </div>
             <div class="member-card column-flex">
-                <img src="../assets/Algasim.jpg" alt="Kumba Khan" class="member-img">
+                <img src="../assets/kumba.jpg" alt="Kumba Khan" class="member-img">
                 <p class="member-name">Kumba Khan</p>
                 <p class="member-role">Frontend Developer</p>
                 <div class="socialmedia-handles row-flex">
-                    <a href="" class="socialmedia github">
+                    <a href="https://github.com/kumba-khan" class="socialmedia github" target="_blank">
                         <img src="../assets/github.svg" alt="github" class="socialmedia-icon">
                     </a>
-                    <a href="" class="socialmedia twitter">
+                    <a href="https://x.com/kumba_khan19413?s=21" class="socialmedia twitter">
                         <img src="../assets/x.svg" alt="twitter" class="socialmedia-icon">
                     </a>
-                    <a href="" class="socialmedia linked-in">
-                        <img src="../assets/linkedin.svg" alt="linked-in" class="socialmedia-icon">
+                     <a href="https://www.facebook.com/share/16v2VEcKmP/?mibextid=wwXIfr" class="socialmedia facebook">
+                        <img src="../assets/facebook.svg" alt="facebook" class="socialmedia-icon">
                     </a>
                 </div>
             </div>
             <div class="member-card column-flex">
-                <img src="../assets/Algasim.jpg" alt="Baboucarr Sallah" class="member-img">
+                <img src="../assets/baboucarr.jpg" alt="Baboucarr Sallah" class="member-img">
                 <p class="member-name">Baboucarr Sallah</p>
                 <p class="member-role">Fullstack Developer</p>
                 <div class="socialmedia-handles row-flex">
-                    <a href="" class="socialmedia github">
+                    <a href="https://github.com/Ngange" class="socialmedia github" target="_blank">
                         <img src="../assets/github.svg" alt="github" class="socialmedia-icon">
-                    </a>
-                    <a href="" class="socialmedia twitter">
-                        <img src="../assets/x.svg" alt="twitter" class="socialmedia-icon">
-                    </a>
-                    <a href="" class="socialmedia linked-in">
-                        <img src="../assets/linkedin.svg" alt="linked-in" class="socialmedia-icon">
                     </a>
                 </div>
             </div>
             <div class="member-card column-flex">
-                <img src="../assets/Algasim.jpg" alt="Muhammed Njie" class="member-img">
+                <img src="../assets/person.png" alt="Muhammed Njie" class="member-img">
                 <p class="member-name">Muhammed Njie</p>
                 <p class="member-role">Fullstack Developer</p>
-                <div class="socialmedia-handles row-flex">
-                    <a href="" class="socialmedia github">
-                        <img src="../assets/github.svg" alt="github" class="socialmedia-icon">
-                    </a>
-                    <a href="" class="socialmedia twitter">
-                        <img src="../assets/x.svg" alt="twitter" class="socialmedia-icon">
-                    </a>
-                    <a href="" class="socialmedia linked-in">
-                        <img src="../assets/linkedin.svg" alt="linked-in" class="socialmedia-icon">
-                    </a>
-                </div>
             </div>
         </div>
+        <img src="../assets/arrow left.svg" alt="previous" id="previous-member" class="previous">
+        <img src="../assets/arrow-right.svg" alt="next" id="next-member" class="next">
+        <div class="dots-container" id="dots-container"></div>
     </section>
-    <script src="../script/script.js"></script>
+    <script src="../scripts/script.js"></script>
 </body>
 
 </html>
