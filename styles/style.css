@@ -198,6 +198,403 @@ body{
 }
 /*style for projects and team ends here*/
 
+/* styles for testimonial ,business, and articles starts here */
+/* Testimonials Section */
+.testimonials-section {
+  background: url("https://res.cloudinary.com/df5b1c189/image/upload/v1753216959/testi_cover_lb04y4.jpg") center/cover no-repeat;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 4em;
+}
+
+.testimonials-title {
+  font-size: 3rem;
+  opacity: 0.3;
+}
+
+.customer-feedback {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.to-eparate{
+  margin-right: 7em;
+}
+
+.testimonials-heading {
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 5.5rem;
+  align-items: center;
+  
+  
+  
+}
+
+.testimonial-card {
+  background: white;
+  color: #000;
+  display: inline-block;
+  overflow: visible;
+   text-align: left;
+   box-sizing: border-box;
+    width: 350px;
+  max-width: 100%;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+ 
+  
+}
+
+.testimonial-img-stars {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.client-photo {
+  border-radius: 25%;
+  margin-top: -40px;
+  margin-left: 2em;
+   border: 3px solid white;
+}
+
+.stars {
+  color: black;
+  margin-top: .5em;
+  margin-left: auto;
+  margin-right: 8em;
+}
+
+.card-p {
+ width: 100%;
+ font-weight: 00;
+ margin-top: .5em;
+ text-align:left;
+ word-spacing: 2px;
+ line-height: 1.5;
+ margin-bottom: 1em;
+ padding-left: 2em;
+ 
+}
+
+.card-name{
+  font-weight: 600;
+  font-size: medium;
+  text-align: left;
+   padding-left: 2em;
+   display: block;
+}
+
+.client-role {
+  font-size: 0.85rem;
+  color: #555;
+  margin-bottom: 3em;
+  text-align: left;
+  padding-left: 4em;
+  font-style: italic;
+  display: block;
+  
+}
+
+.arrow {
+  background: white;
+  border-radius: 50%;
+  outline: black;
+  color: black;
+  cursor: pointer;
+  padding: .5em;
+  display: flex;
+   font-weight: bold;
+    font-size: 2.2rem; 
+    width: 56px;
+     border: 3px solid #111;
+}
+
+.right{
+  margin:  auto;
+ display: block;
+  
+}
+
+/* Business Section */
+.business-solutions {
+  background: #f8f8f8;
+  margin-top: 2rem;
+  border-radius: 20px;
+   padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.business-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+
+  
+}
+
+.business-img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 10px;
+}
+
+.business-content {
+  text-align: center;
+}
+
+.about-business{
+  font-weight: 1000;
+}
+
+.contact-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding:.5em 1.5em .5em 1em;
+  margin-top: 1rem;
+  border-radius: 4%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Articles Section */
+.articles-section {
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.articles-title{
+  color: red;
+  font: bold;
+ font-weight: 700;
+}
+
+.articles-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.articles-heading {
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  padding-bottom: 1rem;
+  overflow: hidden;
+  outline: white;
+
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+  border: 8px solid white;
+}
+
+.blog-meta {
+  display: flex;
+  color: #625e5e;
+  padding: 0.75rem 1rem 0;
+}
+
+.date{
+  font-weight: 600;
+  font-size: small;
+}
+
+.blog-author{
+  margin-left: auto;
+  font-weight: 600;
+  font-size: small;
+}
+
+.blog-title {
+  font-weight: 900;
+  font-size: medium;
+  text-align: center;
+  
+}
+
+.blog-p{
+  font-weight: 500;
+  text-align: center;
+  font: bold;
+}
+
+.blog-btn{
+  color: white;
+  background-color: black;
+  border: none;
+  padding: .5em 2em .5em 2em;
+  border-radius: 20px;
+ margin: 0 auto;
+ display: block;
+  margin-top: 2em;
+  margin-bottom: .5em;
+  
+}
+
+.read-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.more-blogs{
+   color: white;
+  background-color: black;
+  border: none;
+  padding: .5em 2em .5em 2em;
+  border-radius: 20px;
+ margin: 0 auto;
+ display: block;
+  margin-top: 2em;
+  margin-bottom: .5em;
+
+}
+
+
+
+/* Responsive (Tablet & Up) */
+@media (min-width: 640px) {
+  .testimonial-cards {
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+    
+  }
+
+  .testimonial-card {
+   margin-bottom: -200px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   
+  }
+
+  .arrow{
+    display: flex;
+    margin-bottom: -2em;
+  }
+
+  .left{
+    margin-bottom: -5em;
+  }
+
+  
+  .right{
+    margin-left: auto;
+  
+  }
+
+  
+
+  .business-solutions{
+    margin-top: 25rem;
+  }
+
+  .business-card {
+    flex-direction: row;
+    justify-content: center;
+   
+  }
+
+  .business-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+  .business-content {
+    /* padding-left: 1.5rem; */
+    flex: 1;
+  text-align: center;
+
+  }
+
+  .blog-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .blog-card {
+    width: calc(50% - 1rem);
+  }
+}
+
+/* Responsive (Desktop & Up) */
+@media (min-width: 1024px) {
+  .testimonial-card {
+    max-width: 400px;
+    margin-left: auto;
+  }
+  
+
+  .testimonial-cards {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0em;
+    
+  }
+
+  .business-solutions{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    
+
+  }
+
+  .left{
+    margin-bottom: -4em;
+    margin-left: 4em;
+  }
+
+  .blog-card {
+    width: calc(33.333% - 1rem);
+  }
+}
+
+/* styles for the testimonial ,business, and articles ends here */
+ 
 /* style for footer */
 .footer{
     flex-wrap: wrap;
