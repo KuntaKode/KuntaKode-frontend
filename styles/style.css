@@ -11,6 +11,170 @@ body{
     line-height: 1.5;
     margin: 0;
 }
+/* Top Bar */
+.top-bar {
+  background: #330000;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar:hover {
+  background: #4c1497;
+}
+.top-bar .social img {
+ width: 18px;
+ justify-content: space-between;
+ margin-right: 8px;
+}
+.social {
+  display: flex;
+  align-items: center;
+}  
+/* Navbar */
+.navbar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+  position: relative;
+  font-size: 1.6rem;
+}
+.navbar .nav-logo {
+  width: 120px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.appointment-btn {
+  background: #000;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+}
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #fff;
+  list-style: none;
+  top: 30px;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu li a {
+  display: block;
+  padding: 5px 15px;
+  white-space: nowrap;
+}
+nav ul li a:hover {
+  color: #007bff;
+}
+.appointment-btn:hover {
+  color: #007bff;
+}
+.dropdown-menu li {
+  list-style: none;
+}
+#appointmentBtn {
+  color: #fff;
+}
+#appointmentBtn:hover {
+  color: #007bff;
+}
+.cta-button:hover {
+  background: #4c1497;
+}
+/* Hero */
+.hero {
+  background: url("/assets/bg\ image\ kuntakode.avif") no-repeat center top;
+  background-size: cover;
+  position: relative;
+  padding: 120px 20px 60px;
+  color: #000;
+}
+.hero::after {
+  content: "";
+  background: url("/assets/tech_shape_1.webp") no-repeat right center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+ margin-bottom: 500px;
+}
+.hero-text {
+  max-width: 600px;
+  z-index: 1;
+  position: relative;
+  font-size: 1.6rem;
+}
+.hero h1 {
+  font-size: 4.8rem;
+  margin: 20px 0;
+}
+.hero p {
+  font-size: 1.92rem;
+  margin-bottom: 20px;
+}
+.cta-button {
+  background: #220055;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+  }
+  .hero h1 {
+    font-size: 3.2rem;
+  }
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+  .cta-button {
+    font-size: 1.44rem;
+    padding: 10px 15px;
+  }
+}
 
 /*style for projects and team begins here*/
 .section-title{
