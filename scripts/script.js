@@ -1,3 +1,31 @@
+const hamburgerEl=document.getElementById('open-nav');
+const closeEl=document.getElementById('close-nav');
+const navBar=document.getElementById('nav-bar')
+const navLinks=document.getElementById('nav-links')
+
+hamburgerEl.addEventListener('click', openNavigation);
+closeEl.addEventListener('click', closeNavigation);
+function openNavigation(){
+    hamburgerEl.style.display='none';
+    navLinks.style.display='flex';
+    navBar.style.height='45rem';
+}
+
+function closeNavigation(){
+    navLinks.style.display='none';
+    hamburgerEl.style.display='block';
+    navBar.style.height='7rem'
+}
+
+window.addEventListener('resize',()=>{
+    if(window.innerWidth>767){
+        navLinks.style.display='flex';
+        hamburgerEl.style.display='none';
+    }else{
+        closeNavigation()
+    }
+})
+
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- Reusable Carousel Initialization Function ---

@@ -12,51 +12,62 @@
 </head>
 
 <body>
-  <!-- Top Contact Bar -->
-  <div class="top-bar">
-    <div>BANJUL, THE GAMBIA</div>
-    <div class="social">
-      <img src="/assets/Call.svg" alt="Phone">
+  <header><!-- Top Contact Bar -->
+    <div class="top-bar row-flex">
+    <div class="basic-details row-flex">
+      <div class="row-flex location">
+      <img src="../assets/location.svg" alt="location" class="top-bar-img">
+      <p>BANJUL, THE GAMBIA</p>
+    </div>
+    <div class="phone row-flex">
+      <img src="/assets/Call.svg" alt="Phone" class="top-bar-img">
       +220 1234567
     </div>
-    <div class="social">
-    <a href=""><img src="/assets/Mail.svg" alt="Mail"></a>
-      KUNTAKODE@GMAIL.COM
+    <div class="email row-flex">
+    <a href=""><img src="/assets/Mail.svg" alt="Mail" class="top-bar-img"></a>
+      <p>KUNTAKODE@GMAIL.COM</p>
     </div>
-    <div class="social">
-      FOLLOW US ON :
-      <a href="https://www.instagram.com/kuntakode/"><img src="/assets/instagram.svg" alt="Instagram" /></a>
-      <a href="https://www.linkedin.com/company/kuntakode/?viewAsMember=true"><img src="/assets/linkedin.svg" alt="LinkedIn" /></a>
+    </div>
+    
+    <div class="social row-flex">
+      <p>FOLLOW US ON:</p>
+      <a href="https://www.instagram.com/kuntakode/"><img src="/assets/instagram white.svg" alt="Instagram" /></a>
+      <a href="https://www.linkedin.com/company/kuntakode/?viewAsMember=true"><img src="/assets/linkedin white.svg" alt="LinkedIn" /></a>
     </div>
   </div>
+  </header>
+  
   <!-- Navbar -->
-  <nav class="navbar">
-    <img src="/assets/KuntaKode Logo.png" class="nav-logo" alt="Logo" />
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">ABOUT US</a></li>
+  <nav class="navbar row-flex" id="nav-bar">
+    <img src="/assets/KuntaKode Logo.png" class="nav-logo" alt="Logo"/>
+    <img src="../assets/hamburger.svg" alt="open-navigation" id="open-nav" class="open-nav">
+    <ul class="nav-links" id="nav-links">
+      <img src="../assets/close.svg"  class="close-nav" id="close-nav" alt="close-navigation">
+      <li><a href="#" class="nav-link">HOME</a></li>
+      <li><a href="#" class="nav-link">ABOUT US</a></li>
       <li class="dropdown">
-        <a href="#">SERVICES</a>
+        <a href="#" class="nav-link">SERVICES</a>
         <ul class="dropdown-menu">
-          <li><a href="#">Web Development</a></li>
-          <li><a href="#">Mobile Apps</a></li>
+          <li class="dropdown-list">Web Development</li>
+          <li class="dropdown-list">Mobile Apps</li>
         </ul>
       </li>
-      <li><a href="#">BLOGS</a></li>
-      <li><a href="#">CONTACT US</a></li>
-      <li><a href="#" id="appointmentBtn" class="appointment-btn">MAKE APPOINTMENT ➜</a></li>
+      <li><a href="#" class="nav-link">BLOGS</a></li>
+      <li><a href="#" class="nav-link">CONTACT US</a></li>
+      <li><a href="#" id="appointmentBtn" class="appointment-btn quick-btn">MAKE APPOINTMENT ➜</a></li>
     </ul>
   </nav>
+  
   <main>
     <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
       <h4>SOFTWARE SOLUTIONS & DIGITAL INNOVATION</h4>
-      <h1>We Build Smart Solutions<br />That Power Your Vision</h1>
-      <p>
-        At KuntaKode, we turn bold ideas into powerful digital solutions — built to solve real problems, fast.
+      <h1 class="hero-text-main">We Build Smart Solutions<br />That Power Your Vision</h1>
+      <p class="powerful-digital-solutions">
+        At KuntaKode, we turn bold ideas into powerful digital solutions<br>— built to solve real problems, fast.
       </p>
-      <a href="#" class="cta-button">LETS BUILD TOGETHER ➜</a>
+      <a href="#" class="cta-button quick-btn">LETS BUILD TOGETHER ➜</a>
     </div>
   </section>
     <section class="projects" id="projects">
