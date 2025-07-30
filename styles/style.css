@@ -16,16 +16,18 @@ body{
 .top-bar {
   background: #000;
   color: #fff;
-  justify-content: space-between;
   padding: 0 2.5rem;
   flex-wrap: wrap;
+}
+
+.top-bar, .basic-details{
+    justify-content: center;
 }
 
 .top-bar-img {
  width: 3rem;
 }
 .basic-details{
-  justify-content: flex-start;
   flex-wrap: wrap;
   column-gap: 2rem;
 }
@@ -37,7 +39,7 @@ body{
 /* Navbar */
 .navbar {
   background: #fff;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 1.5rem 2rem;
   flex-wrap: wrap;
   position: sticky;
@@ -52,12 +54,13 @@ body{
   width: 12rem;
 }
 
-.nav-links {
-  display: flex;
-  flex-direction: row;
+.nav-links{
+  display: none;
   list-style: none;
-  justify-content: space-evenly;
-  width: 75%;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 2rem;
+  align-items: center;
 }
 .nav-link{
   text-decoration: none;
@@ -81,9 +84,9 @@ body{
 }
 
 /* closing and opening navigation */
-.close-nav, .open-nav{
+.open-nav,.close-nav{
+  display: block; /*only shown in smaller viewport*/
   cursor: pointer;
-  display: none; /*only hidden in larger viewport*/
 }
 
 /* Dropdown */
@@ -136,7 +139,7 @@ body{
   position: relative;
 }
 .hero-text-main {
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   line-height: 1.3;
   margin: 2rem 0 0 0;
 }
@@ -149,31 +152,31 @@ body{
 }
  
 /* Responsive */
-@media (max-width: 768px) {
-  .top-bar, .basic-details{
-    justify-content: center;
-  }
-
-  .hero-text-main{
-    font-size: 3.2rem;
-  }
-
-  .nav-links{
-    flex-direction: column;
-    width: 100%;
-    row-gap: 2rem;
-    align-items: center;
-  }
-  /* closing and opening navigation */
-  .open-nav,.close-nav{
-  display: block; /*only shown in smaller viewport*/
-  }
-
-  .nav-links{
-    display: none;
-  }
-  .navbar{
+@media (min-width: 767px) {
+  .top-bar{
     justify-content: space-between;
+  }
+
+  .basic-details{
+    justify-content: flex-start;
+  }
+  .hero-text-main{
+    font-size: 4.8rem;
+  }
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 75%;
+}
+  /* closing and opening navigation */
+  .close-nav, .open-nav{
+  display: none; /*only hidden in larger viewport*/
+}
+
+  .navbar{
+    justify-content: space-evenly;
   }
 }
 
