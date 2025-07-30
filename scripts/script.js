@@ -9,12 +9,14 @@ function openNavigation(){
     hamburgerEl.style.display='none';
     navLinks.style.display='flex';
     navBar.style.height='45rem';
+    navBar.style.background='linear-gradient(white, #9db8d3)';
 }
 
 function closeNavigation(){
     navLinks.style.display='none';
     hamburgerEl.style.display='block';
-    navBar.style.height='7rem'
+    navBar.style.height='7rem';
+    navBar.style.background='white';
 }
 
 window.addEventListener('resize',()=>{
