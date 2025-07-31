@@ -1,32 +1,45 @@
-const hamburgerEl=document.getElementById('open-nav');
-const closeEl=document.getElementById('close-nav');
-const navBar=document.getElementById('nav-bar')
-const navLinks=document.getElementById('nav-links')
+const hamburgerEl = document.getElementById('open-nav');
+const closeEl = document.getElementById('close-nav');
+const navBar = document.getElementById('nav-bar')
+const navLinks = document.getElementById('nav-links')
 
 hamburgerEl.addEventListener('click', openNavigation);
 closeEl.addEventListener('click', closeNavigation);
-function openNavigation(){
-    hamburgerEl.style.display='none';
-    navLinks.style.display='flex';
-    navBar.style.height='min(40rem,90vw)';
-    navBar.style.background='linear-gradient(white, #9db8d3)';
+function openNavigation() {
+    hamburgerEl.style.display = 'none';
+    navLinks.style.display = 'flex';
+    navBar.style.height = 'min(40rem,90vw)';
+    navBar.style.background = 'linear-gradient(white, #9db8d3)';
 }
 
-function closeNavigation(){
-    navLinks.style.display='none';
-    hamburgerEl.style.display='block';
-    navBar.style.height='4rem';
-    navBar.style.background='white';
+function closeNavigation() {
+    navLinks.style.display = 'none';
+    hamburgerEl.style.display = 'block';
+    navBar.style.height = '4rem';
+    navBar.style.background = 'white';
 }
 
-window.addEventListener('resize',()=>{
-    if(window.innerWidth>767){
-        navLinks.style.display='flex';
-        hamburgerEl.style.display='none';
-    }else{
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 767) {
+        navLinks.style.display = 'flex';
+        hamburgerEl.style.display = 'none';
+    } else {
         closeNavigation()
     }
 })
+
+function toggleMore(button) {
+    const card = button.parentElement;
+    const moreText = card.querySelector('.more-text');
+
+    if (moreText.style.display === 'none') {
+        moreText.style.display = 'block';
+        button.textContent = 'Show Less';
+    } else {
+        moreText.style.display = 'none';
+        button.textContent = 'Read More'
+    }
+}
 
 document.addEventListener('DOMContentLoaded', () => {
 
