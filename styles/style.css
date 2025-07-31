@@ -53,15 +53,15 @@ body {
   flex-wrap: wrap;
   position: sticky;
   top: 0;
-  font-size: 1.6rem;
   z-index: 2;
-  font-size: 2rem;
-  height: 7rem;
+  font-size: min(1.8rem, 4vw);
+  height: 4rem;
   transition: all 0.5s ease;
 }
 
 .nav-logo {
-  width: 12rem;
+  width: 17%;
+  max-width: 10rem;
 }
 
 .nav-links {
@@ -69,7 +69,7 @@ body {
   list-style: none;
   flex-direction: column;
   width: 100%;
-  row-gap: 2rem;
+  row-gap: 1.3rem;
   align-items: center;
 }
 
@@ -88,12 +88,16 @@ body {
   background: #000;
   color: white;
   text-decoration: none;
-  padding: 2rem 2rem;
+  padding: min(1.5rem, 4vw);
   font-weight: 600;
 }
 
 .quick-btn:hover {
   background: #4c1497;
+}
+
+.open-nav, .close-nav{
+  width: min(13%,5rem);
 }
 
 /* closing and opening navigation */
@@ -136,7 +140,7 @@ body {
   position: relative;
   padding: 18rem 0 18rem 10rem;
   color: #000;
-  font-size: 2rem;
+  font-size: min(1.8rem, 4vw);
 }
 
 .hero::after {
@@ -191,7 +195,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 75%;
+    width: 80%;
   }
 
   /* closing and opening navigation */
@@ -201,8 +205,9 @@ body {
     /*only hidden in larger viewport*/
   }
 
-  .navbar {
-    justify-content: space-evenly;
+  .navbar{
+    font-size: 1.5vw;
+    height: 7rem;
   }
 }
 
