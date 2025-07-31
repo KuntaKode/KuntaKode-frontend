@@ -14,35 +14,36 @@
 <body>
   <header><!-- Top Contact Bar -->
     <div class="top-bar row-flex">
-    <div class="basic-details row-flex">
-      <div class="row-flex location">
-      <img src="../assets/location.svg" alt="location" class="top-bar-img">
-      <p>BANJUL, THE GAMBIA</p>
+      <div class="basic-details row-flex">
+        <div class="row-flex location">
+          <img src="../assets/location.svg" alt="location" class="top-bar-img">
+          <p>BANJUL, THE GAMBIA</p>
+        </div>
+        <div class="phone row-flex">
+          <img src="/assets/Call.svg" alt="Phone" class="top-bar-img">
+          +220 1234567
+        </div>
+        <div class="email row-flex">
+          <a href="mailto:kuntakode.tech@gmail.com"><img src="/assets/Mail.svg" alt="Mail" class="top-bar-img"></a>
+          <p>KUNTAKODE@GMAIL.COM</p>
+        </div>
+      </div>
+
+      <div class="social row-flex">
+        <p>FOLLOW US ON:</p>
+        <a href="https://www.instagram.com/kuntakode/"><img src="/assets/instagram white.svg" alt="Instagram" /></a>
+        <a href="https://www.linkedin.com/company/kuntakode/?viewAsMember=true"><img src="/assets/linkedin white.svg"
+            alt="LinkedIn" /></a>
+      </div>
     </div>
-    <div class="phone row-flex">
-      <img src="/assets/Call.svg" alt="Phone" class="top-bar-img">
-      +220 1234567
-    </div>
-    <div class="email row-flex">
-    <a href="mailto:kuntakode.tech@gmail.com"><img src="/assets/Mail.svg" alt="Mail" class="top-bar-img"></a>
-      <p>KUNTAKODE@GMAIL.COM</p>
-    </div>
-    </div>
-    
-    <div class="social row-flex">
-      <p>FOLLOW US ON:</p>
-      <a href="https://www.instagram.com/kuntakode/"><img src="/assets/instagram white.svg" alt="Instagram" /></a>
-      <a href="https://www.linkedin.com/company/kuntakode/?viewAsMember=true"><img src="/assets/linkedin white.svg" alt="LinkedIn" /></a>
-    </div>
-  </div>
   </header>
-  
+
   <!-- Navbar -->
   <nav class="navbar row-flex" id="nav-bar">
-    <img src="/assets/KuntaKode Logo.png" class="nav-logo" alt="Logo"/>
+    <img src="/assets/KuntaKode Logo.png" class="nav-logo" alt="Logo" />
     <img src="../assets/hamburger.svg" alt="open-navigation" id="open-nav" class="open-nav">
     <ul class="nav-links" id="nav-links">
-      <img src="../assets/close.svg"  class="close-nav" id="close-nav" alt="close-navigation">
+      <img src="../assets/close.svg" class="close-nav" id="close-nav" alt="close-navigation">
       <li><a href="#" class="nav-link">HOME</a></li>
       <li><a href="#" class="nav-link">ABOUT US</a></li>
       <li class="dropdown">
@@ -57,19 +58,103 @@
       <li><a href="#" id="appointmentBtn" class="appointment-btn quick-btn">MAKE APPOINTMENT ➜</a></li>
     </ul>
   </nav>
-  
+
   <main>
     <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h4>SOFTWARE SOLUTIONS & DIGITAL INNOVATION</h4>
-      <h1 class="hero-text-main">We Build Smart Solutions<br />That Power Your Vision</h1>
-      <p class="powerful-digital-solutions">
-        At KuntaKode, we turn bold ideas into powerful digital solutions<br>— built to solve real problems, fast.
-      </p>
-      <a href="#" class="cta-button quick-btn">LETS BUILD TOGETHER ➜</a>
+    <section class="hero">
+      <div class="hero-text">
+        <h4>SOFTWARE SOLUTIONS & DIGITAL INNOVATION</h4>
+        <h1 class="hero-text-main">We Build Smart Solutions<br />That Power Your Vision</h1>
+        <p class="powerful-digital-solutions">
+          At KuntaKode, we turn bold ideas into powerful digital solutions<br>— built to solve real problems, fast.
+        </p>
+        <a href="#" class="cta-button quick-btn">LETS BUILD TOGETHER ➜</a>
+      </div>
+    </section>
+
+    <div class="bg">
+      <h1 class="transparent">Services</h1>
+      <!-- Services Section -->
+      <section class="service-section">
+        <img src="./design-assets/title_shape_2.svg" alt="shape2"> <span>Our Services</span>
+        <h2>We Provide Exclusive Services<br><span class="highlight">For Your Business</span></h2>
+        <div class="cards">
+          <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/code.png" alt="Web Dev Icon">
+            <h3>WEB DEVELOPMENT</h3>
+            <p>We design and build full-stack web applications tailored to real-world needs – functional, and ready to
+              scale.
+              <span class="more-text">
+                From small business websites to enterprise-level platforms, we focus on writing clean, maintainable code
+                that ensures speed, security, and a seamless user experience. We use the latest technologies like React,
+                Node.js, and databases like MongoDB or MySQL to bring your ideas to life. Whether you're starting from
+                scratch or need improvements to an existing product, our web development team delivers beyond
+                expectations.
+              </span>
+            </p>
+            <button onclick="toggleMore(this)">Read More</button>
+          </div>
+          <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/paint-palette.png" alt="UI/UX Icon">
+            <h3>UI/UX DESIGN</h3>
+            <p>We craft clean, user-friendly interfaces that make your web apps intuitive, modern, and easy to use.
+              <span class="more-text">
+                Our design process focuses on user-centered solutions that balance aesthetics with functionality. We
+                start with research, wireframes, and interactive prototypes to ensure your product is not only beautiful
+                but also functional. Whether you're building a brand from scratch or refreshing your current interface,
+                we ensure your users enjoy every interaction on your site or app. </span>
+            </p>
+            <button onclick="toggleMore(this)">Read More</button>
+          </div>
+          <div class="card">
+            <img src="https://img.icons8.com/ios-filled/50/maintenance.png" alt="Maintain Icon">
+            <h3>MAINTAIN SOFTWARE</h3>
+            <p>We provide ongoing software maintenance to keep your applications secure, up-to-date, and running
+              smoothly.
+              <span class="more-text">
+                Our maintenance services include bug fixes, performance optimization, feature upgrades, and regular
+                backups. We understand that a successful digital product doesn’t end at launch — it requires continuous
+                care. We work closely with your team to ensure your systems stay updated with the latest standards,
+                frameworks, and security patches, reducing downtime and improving reliability. </span>
+            </p>
+            <button onclick="toggleMore(this)">Read More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section">
+        <div class="about-image">
+
+          <img src="./design-assets/bulb image.svg" alt="bulb">
+          <img src="./design-assets/about_4_1.webp" alt="abt">
+          <img src="./design-assets/circle.png" alt="circle">
+        </div>
+        <div class="about-text">
+          <b>
+            <h1> About Us</h1>
+          </b>
+          <h3>Build Better. Launch Smarter.</h3>
+          <p>
+            At KuntaKode, we’re more than just a group of developers — we’re a growing community of builders, thinkers,
+            and innovators passionate about using technology to solve real-world problems. Born from the spirit of
+            collaboration and local pride, our team is made up of young, skilled software engineers and designers who
+            believe in building impactful digital solutions from Africa, for the world.
+          </p>
+          <p>
+            We specialize in custom software development, modern web solutions, and UI/UX design, with a strong focus on
+            performance, scalability, and simplicity. Whether it's a startup idea, a business automation tool, or a
+            community-driven project — we bring your vision to life with clean code, thoughtful design, and a deep
+            understanding of your goals.
+          </p>
+          <p>
+            At KuntaKode, every project is a chance to grow, every client is a partner, and every line of code tells a
+            story.
+          </p>
+        </div>
+      </section>
     </div>
-  </section>
+
     <section class="projects" id="projects">
       <h2 class="section-title">PROJECTS</h2>
       <div class="section-sub-title-container row-flex">
@@ -504,7 +589,8 @@
         <a href="https://x.com/KuntaKode" class="footer-social-link" target="_blank">
           <img src="../assets/x white.svg" alt="twitter" class="footer-social-icon" />
         </a>
-        <a href="https://www.linkedin.com/company/kuntakode/?viewAsMember=true" class="footer-social-link" target="_blank">
+        <a href="https://www.linkedin.com/company/kuntakode/?viewAsMember=true" class="footer-social-link"
+          target="_blank">
           <img src="../assets/linkedin white.svg" alt="linkedin" class="footer-social-icon" />
         </a>
       </div>
