@@ -16,25 +16,26 @@ body {
 }
 
 /* Top Bar */
-.top-bar {
+.header{
+  width: 100%;
+  overflow: hidden;
   background: #000;
+  padding: 0;
+}
+.top-bar {
   color: #fff;
-  padding: 0 2.5rem;
-  flex-wrap: wrap;
+  white-space: nowrap;
+  width: max-content;
+  transform: translate3d(0, 0, 0);
+  animation: scroll-horizontally 13s linear infinite;
 }
 
-.top-bar,
-.basic-details {
-  justify-content: center;
+.top-bar:hover{
+  animation-play-state: paused;
 }
 
 .top-bar-img {
   width: 3rem;
-}
-
-.basic-details {
-  flex-wrap: wrap;
-  column-gap: 2rem;
 }
 
 .social,
@@ -43,8 +44,19 @@ body {
 .location {
   justify-content: space-evenly;
   column-gap: 1rem;
+  flex-shrink: 0;
+  margin: 0 7rem;
 }
 
+@keyframes scroll-horizontally {
+  0%{
+    transform: translateX(0);
+  }
+
+  100%{
+    transform: translateX(-50%);
+  }
+}
 /* Navbar */
 .navbar {
   background: #fff;
@@ -53,7 +65,7 @@ body {
   flex-wrap: wrap;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 4;
   font-size: min(1.8rem, 4vw);
   height: 4rem;
   transition: all 0.5s ease;
@@ -179,14 +191,6 @@ body {
 
 /* Responsive */
 @media (min-width: 767px) {
-  .top-bar {
-    justify-content: space-between;
-  }
-
-  .basic-details {
-    justify-content: flex-start;
-  }
-
   .hero-text-main {
     font-size: 4.8rem;
   }

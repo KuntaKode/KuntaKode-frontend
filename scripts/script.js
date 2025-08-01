@@ -23,6 +23,7 @@ window.addEventListener('resize', () => {
     if (window.innerWidth > 767) {
         navLinks.style.display = 'flex';
         hamburgerEl.style.display = 'none';
+        navBar.style.height = '7rem';
     } else {
         closeNavigation()
     }
