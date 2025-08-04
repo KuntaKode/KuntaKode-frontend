@@ -622,7 +622,7 @@ body {
 }
 
 .testimonials-heading {
-  font-size: 2.1rem;
+  font-size: 4rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
@@ -672,11 +672,13 @@ body {
   margin-top: .5em;
   margin-left: auto;
   margin-right: 8em;
+  
 }
 
 .card-p {
   width: 100%;
-  font-weight: 00;
+  font-weight: 500;
+  font-size: 2rem;
   margin-top: .5em;
   text-align: left;
   word-spacing: 2px;
@@ -759,7 +761,7 @@ body {
 
 .about-business {
   font-weight: 1000;
-  font-size: 1.4rem;
+  font-size: 2.8rem;
 }
 
 .contact-btn {
@@ -771,6 +773,7 @@ body {
   border-radius: 4%;
   cursor: pointer;
   font-weight: bold;
+  font-size: 2rem;
 }
 
 /* Articles Section */
@@ -783,7 +786,7 @@ body {
   color: red;
   font: bold;
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 .articles-header {
@@ -792,6 +795,7 @@ body {
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 0.5rem;
+  font-size: 3rem;
 }
 
 .articles-heading {
@@ -844,6 +848,7 @@ body {
   font-weight: 900;
   font-size: medium;
   text-align: center;
+  font-size: 1.5rem;
 
 }
 
@@ -851,7 +856,7 @@ body {
   font-weight: 500;
   text-align: center;
   font: bold;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 .blog-btn {
@@ -864,6 +869,7 @@ body {
   display: block;
   margin-top: 2em;
   margin-bottom: .5em;
+  font-size: 1.5rem;
 
 }
 
@@ -890,6 +896,7 @@ body {
   display: block;
   margin-top: 2em;
   margin-bottom: .5em;
+  font-size: 1.5rem;
 
 }
 
