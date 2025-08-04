@@ -104,7 +104,7 @@ body {
   font-weight: 600;
 }
 
-.quick-btn:hover {
+.quick-btn:hover, .service-card-button:hover {
   background: #4c1497;
 }
 
@@ -150,7 +150,7 @@ body {
   background: url("/assets/bg\ image\ kuntakode.avif") no-repeat center top;
   background-size: cover;
   position: relative;
-  padding: 18rem 0 18rem 10rem;
+  padding: 12rem 2rem;
   color: #000;
   font-size: min(1.8rem, 4vw);
 }
@@ -213,71 +213,79 @@ body {
     font-size: 1.5vw;
     height: 7rem;
   }
+
+  .hero {
+    padding: 18rem 0 18rem 10rem;
+  }
 }
 /* service and about section begins here */
 
 .bg {
-  width: 100%;
   height: 300vh;
-  background-image: url(../assets/banner-1\ 1.png), url(../assets/bg\ image\ kuntakode.jpg);
+  background-image: url(../assets/banner-1\ 1.png), url(../assets/bg\ image\ kuntakode.avif);
   background-repeat: no-repeat, no-repeat;
   background-position: center top, center bottom;
-  background-size: 100% 25%, 100% 75%;
+  background-size: 100% 30%, 100% 70%;
+  margin: 0;
+  padding: 0;
 }
 
 .transparent {
   color: rgba(128, 128, 128, 0.39);
-  font-size: 12.8rem;
+  font-size: min(12.8rem,18vw);
   font-weight: 900;
   font-style: italic;
   padding-top: 8%;
   padding-left: 2.5%;
+  margin: 0;
 }
 
 .service-section {
   color: white;
   padding: 17% 3%;
-  margin-top: -35.2rem;
+  margin-top: -30rem;
 }
 
-.highlight {
-  color: #ff5722;
+.our-services{
+  font-size: 2.5rem;
+  margin-left: 2rem;
 }
 
-.service-section h2 {
-  font-size: 4.8rem;
+.services-comment{
+  font-size: min(4.8rem, 7vw);
   font-weight: 600;
-  margin-top: 0;
+  margin: 0;
+  line-height: 1.2;
 }
 
 .cards {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  gap: 20px;
-  margin-top: 40px;
-  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 4rem;
 }
 
-.card {
+.card{
   background: white;
   color: black;
   font-size: 1.8rem;
   border-radius: 4.8rem;
   padding: 20px;
-  width: 310px;
+  max-width: 310px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.card img {
-  width: 30%;
+.card-img{
+  width: 20%;
 }
 
-.card h3 {
+.service-card-title{
   margin: 15px 0 10px;
 }
 
-.card button {
+.service-card-button {
   font-size: 1.8rem;
   margin-top: 15px;
   padding: 10px 15px;
@@ -360,12 +368,16 @@ body {
   font-size: 3rem;
 }
 
-@media(max-width:1138px) {
-  .bg {
-    height: 400vh;
+@media(max-width:768px) {
+  .cards{
+    flex-wrap: wrap;
   }
 
-  .about-section {
+  .service-section{
+    margin-top: -15rem;
+  }
+
+   .about-section {
     display: block;
   }
 
@@ -376,46 +388,6 @@ body {
 
   .about-image {
     max-width: 90%;
-  }
-
-  .card {
-    width: 50%;
-    font-size: 3.5rem;
-  }
-
-  .card button {
-    font-size: 3.5rem;
-  }
-}
-
-@media(max-width:650px) {
-  .bg {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    height: 500vh;
-  }
-
-  .transparent {
-    font-size: 11rem;
-  }
-
-  .service-section {
-    padding: 10% 2%;
-    margin-top: -20rem;
-  }
-
-  .service-section h2 {
-    font-size: 3.9rem;
-  }
-
-  .card {
-    font-size: 2.3rem;
-    padding: 10px;
-  }
-
-  .card button {
-    font-size: 2.5rem;
   }
 }
 /* sercice and about section ends here */
