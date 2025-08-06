@@ -735,6 +735,8 @@ body {
   padding: 2rem;
   display: flex;
   justify-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 
 .business-card {
@@ -746,6 +748,7 @@ body {
   width: 80%;
   margin: 0 auto;
   font-size: 1.3rem;
+  
 
 }
 
@@ -900,6 +903,13 @@ body {
 
 }
 
+@media (max-width: 480px) {
+  .stars {
+    margin-right: 2em;
+    gap: 1px;
+  }
+}
+
 
 
 /* Responsive (Tablet & Up) */
@@ -982,6 +992,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 0em;
+    
 
   }
 
@@ -994,8 +1005,12 @@ body {
   }
 
   .left {
-    margin-bottom: -7em;
+    margin-bottom: -11em;
     margin-left: .5em;
+  }
+
+  .right {
+    margin-right: 5em;
   }
 
   .blog-card {
