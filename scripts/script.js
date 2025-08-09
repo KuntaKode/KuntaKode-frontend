@@ -29,18 +29,16 @@ window.addEventListener('resize', () => {
     }
 })
 
-function toggleMore(button) {
-    const card = button.parentElement;
+  document.querySelectorAll('.card').forEach(card => {
+    const btn = card.querySelector('.read-more-btn');
     const moreText = card.querySelector('.more-text');
 
-    if (moreText.style.display === 'none') {
-        moreText.style.display = 'block';
-        button.textContent = 'Show Less';
-    } else {
-        moreText.style.display = 'none';
-        button.textContent = 'Read More'
-    }
-}
+    btn.addEventListener('click', () => {
+      const isVisible = moreText.style.display === "inline";
+      moreText.style.display = isVisible ? "none" : "inline";
+      btn.textContent = isVisible ? "Read More" : "Read Less";
+    });
+  });
 
 document.addEventListener('DOMContentLoaded', () => {
 
